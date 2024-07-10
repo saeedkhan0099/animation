@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image:url(pngtree-nasa-furnished-elements-create-a-stunning-yellow-red-space-background-texture-png-image_12443514.png);
+    background-size: cover;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.earth img{
+    position: relative;
+    mix-blend-mode: multiply;
+    width: 500px;
+    animation:earth 20s infinite ;
+}
+@keyframes earth{
+    80% {
+      transform:translate(0%)rotate(200deg)
+      /* rotate(40deg) */
+    }
+}
+
+
+.land{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: car 25s infinite;
+    mix-blend-mode: multiply;
+    position: absolute;
+    border-radius: 50%;
+}
+@keyframes car{
+  100% {
+    transform:translate(0%)rotate(360deg)
+    rotate(700deg)
+}
+}
+.car img{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: -203px;
+    transform: rotate(-92deg);
+}
